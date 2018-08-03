@@ -1,2 +1,4 @@
 # cpplog
-A simple log module written in CPP on Windows. Be Continue ...
+A simple log class written in CPP for Windows. 
+
+See usage in main.cpp
