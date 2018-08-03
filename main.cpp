@@ -14,7 +14,14 @@ int main()
 	// First, init a LogGuard object.
 	// SuLog will work on asynchronous mode if the parameter
 	// passed to the LogGuard constructor is true, while false
-	// for synchronous mode
+	// for synchronous mode.
+	// In the asynchronous mode, all the message content would
+	// be pushed to a queue then be popped to do the actual output in
+	// the background thread. It is conspicuous when use multiple
+	// logger. You can see the output order in the following example.
+	// In the synchronous mode, all the message would be write through
+	// to the output channel where they are coded.
+	// To see the difference, you can try to modify the bool variable.
 	// Since we init the LogGuard here,
 	// you should be awared of that it is !SO DANGEROUS! to 
 	// use sulog inside any global object constructor.
