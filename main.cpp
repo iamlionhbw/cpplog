@@ -46,7 +46,7 @@ int main()
 	// Parameter 2 is the file log path, keep in your mind, it
 	//             doesn't check whether the directory exists
 	//             or not, so you have to confirm this. It is
-	//             undefined behavior if the directory doesn't exists.
+	//             undefined behavior if the directory doesn't exist.
 	// Parameter 3 if true, then it will create a daily log file
 	sulog::AppendFileLog("MateB", "./teammateB.log", sulog::SuLogLevel::INFO, false);
 	// After the above line, a Logger named "MateB" would be added
